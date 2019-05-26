@@ -1,0 +1,15 @@
+{
+	"name": "Flutter",
+	"dockerFile": "Dockerfile",
+	"extensions": [
+		"Dart-Code.flutter"
+	],
+	"runArgs": [
+		"--security-opt",
+		"seccomp=unconfined",
+		"-v",
+		"flutter-vscode-app-root:/root/.vscode-remote",
+		"-v",
+		"flutter-vscode-flutter-home:/home/cirrus/sdks/flutter"
+	]
+}
