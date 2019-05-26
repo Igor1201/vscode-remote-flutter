@@ -16,6 +16,11 @@
 		"-v",
 		"flutter-vscode-app-root:/root/.vscode-remote",
 		"-v",
-		"flutter-vscode-flutter-home:/home/cirrus/sdks/flutter"
+		"flutter-vscode-flutter-home:/home/cirrus/sdks/flutter",
+		"-v",
+		"flutter-vscode-gradle-cache:/home/cirrus/.gradle/caches"
+	],
+	"postCreateCommand": [
+		"/setup-flutter.sh"
 	]
 }
