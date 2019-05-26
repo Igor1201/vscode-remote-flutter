@@ -7,6 +7,12 @@
 	"runArgs": [
 		"--security-opt",
 		"seccomp=unconfined",
+		"-p",
+		"5037:5037",
+		"-p",
+		"5555:5555",
+		"-p",
+		"5554:5554",
 		"-v",
 		"flutter-vscode-app-root:/root/.vscode-remote",
 		"-v",
